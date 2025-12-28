@@ -2,13 +2,12 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{
 font-family:Inter,sans-serif;
-color:#cfefff;
+color:#e6f7ff;
 background:#050b14;
-overflow-x:hidden;
 }
 .bg{
 position:fixed;inset:0;
-background:url('https://i.imgur.com/8ZQZQZQ.jpg') center/cover;
+background:url('background.jpg') center/cover no-repeat;
 z-index:-3;
 }
 .overlay{position:fixed;inset:0;background:rgba(5,10,20,.75);z-index:-2}
@@ -18,28 +17,30 @@ background:url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif');
 opacity:.25;pointer-events:none;z-index:-1
 }
 .hero{text-align:center;padding:120px 20px}
-.logo{font-family:Orbitron;font-size:64px}
+.logo{font-family:Orbitron;font-size:70px}
 .logo span{color:#5ee7ff}
-.subtitle{opacity:.8;margin:10px 0}
-.online{margin:20px;font-size:18px}
-.buttons button,.buttons a, .card button{
+.subtitle{font-size:22px;margin:15px 0;opacity:.9}
+.online{margin:20px;font-size:20px}
+.info-big p{font-size:20px;margin:5px 0}
+.buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+button,.secondary{
 background:linear-gradient(135deg,#5ee7ff,#3a7bd5);
-border:none;padding:14px 24px;border-radius:12px;
+border:none;padding:16px 28px;border-radius:14px;
 color:#fff;font-weight:600;cursor:pointer;text-decoration:none
 }
-.buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.secondary{background:none;border:1px solid #5ee7ff}
-.cards{display:flex;gap:25px;justify-content:center;flex-wrap:wrap;padding:60px 20px}
+.secondary{background:none;border:2px solid #5ee7ff}
+.cards{display:flex;gap:30px;flex-wrap:wrap}
+.center{justify-content:center;text-align:center}
 .card{
-background:rgba(15,25,35,.65);
+background:rgba(15,25,35,.7);
 backdrop-filter:blur(14px);
-border-radius:20px;padding:25px;
-width:260px;text-align:center;
-transition:.4s;
+border-radius:22px;padding:35px;
+transition:.4s;max-width:420px
 }
-.card:hover{transform:translateY(-8px);box-shadow:0 0 40px rgba(120,220,255,.4)}
-.glow{box-shadow:0 0 60px rgba(120,220,255,.6)}
-.page{padding:120px 20px;max-width:1000px;margin:auto}
+.big{font-size:18px}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 50px rgba(120,220,255,.5)}
+.glow{box-shadow:0 0 80px rgba(120,220,255,.7)}
+.page{padding:120px 20px;max-width:1200px;margin:auto}
 .hidden{opacity:0;transform:translateY(40px)}
-.show{opacity:1;transform:none;transition:.8s}
-footer{text-align:center;padding:30px;opacity:.5}
+.show{opacity:1;transform:none;transition:.9s}
+footer{text-align:center;padding:40px;opacity:.6}

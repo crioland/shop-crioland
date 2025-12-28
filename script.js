@@ -1,5 +1,5 @@
 
-fetch("https://api.mcsrvstat.us/bedrock/2/play.crioland.net")
+fetch("https://api.mcsrvstat.us/bedrock/2/195.133.2.175:19132")
 .then(r=>r.json())
 .then(d=>{
  document.getElementById("online").innerHTML =
@@ -7,7 +7,7 @@ fetch("https://api.mcsrvstat.us/bedrock/2/play.crioland.net")
 });
 
 function copyIP(){
-navigator.clipboard.writeText("play.crioland.net");
+navigator.clipboard.writeText("195.133.2.175");
 }
 
 const observer=new IntersectionObserver(e=>{
